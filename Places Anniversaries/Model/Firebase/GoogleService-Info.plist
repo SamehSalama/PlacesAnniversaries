@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>296636667030-p39vf1slvr6gfqk5np6o7coqte8ul0tm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.296636667030-p39vf1slvr6gfqk5np6o7coqte8ul0tm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkZ5pEzKewf09Tp2uXICMKzz7ZfH5vAPk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>296636667030</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dabluealien.Places-Anniversaries</string>
+	<key>PROJECT_ID</key>
+	<string>places-anniversaries</string>
+	<key>STORAGE_BUCKET</key>
+	<string>places-anniversaries.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:296636667030:ios:cce3a50392125ad3261eb7</string>
+	<key>DATABASE_URL</key>
+	<string>https://places-anniversaries.firebaseio.com</string>
+</dict>
+</plist>
