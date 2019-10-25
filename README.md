@@ -8,7 +8,7 @@
 - Supports iPad landscape right and left orientations as well as upside down. 
 
 
-##### App Features
+##### Notes
 - pods are included for testing purpose.
 - classes, methods and variables are documented for clarification (only the ones that need clarification).
 - built with Xcode 11.1.
