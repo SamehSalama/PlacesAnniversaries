@@ -17,6 +17,8 @@
 		AD2521642360835900225C3A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2521622360835900225C3A /* PlaceTableViewCell.swift */; };
 		AD2521652360835900225C3A /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2521632360835900225C3A /* PlaceTableViewCell.xib */; };
 		AD2521682360D34A00225C3A /* PlaceLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2521672360D34A00225C3A /* PlaceLocationViewController.swift */; };
+		AD38941723646ECB00F74FD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD38941623646ECA00F74FD8 /* README.md */; };
+		AD38941923646F5C00F74FD8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38941823646F5C00F74FD8 /* Helper.swift */; };
 		AD509DC4235FA842006F971D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD509DC3235FA842006F971D /* Parser.swift */; };
 		AD5ECAAA235F8CB70051EE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5ECAA9235F8CB70051EE6A /* AppDelegate.swift */; };
 		AD5ECAAC235F8CB70051EE6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5ECAAB235F8CB70051EE6A /* SceneDelegate.swift */; };
@@ -41,6 +43,8 @@
 		AD2521622360835900225C3A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		AD2521632360835900225C3A /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		AD2521672360D34A00225C3A /* PlaceLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLocationViewController.swift; sourceTree = "<group>"; };
+		AD38941623646ECA00F74FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AD38941823646F5C00F74FD8 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AD509DC3235FA842006F971D /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		AD5ECAA6235F8CB70051EE6A /* Places Anniversaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Places Anniversaries.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5ECAA9235F8CB70051EE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		AD5ECA9D235F8CB70051EE6A = {
 			isa = PBXGroup;
 			children = (
+				AD38941623646ECA00F74FD8 /* README.md */,
 				AD5ECAA8235F8CB70051EE6A /* Places Anniversaries */,
 				AD5ECAA7235F8CB70051EE6A /* Products */,
 				B3B7CC3A3FAC11280D8A4A77 /* Pods */,
@@ -142,6 +147,7 @@
 				AD5ECAC5235F8FED0051EE6A /* Firebase */,
 				AD509DC5235FA84B006F971D /* Objects */,
 				AD509DC3235FA842006F971D /* Parser.swift */,
+				AD38941823646F5C00F74FD8 /* Helper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				AD5ECAB6235F8CB80051EE6A /* LaunchScreen.storyboard in Resources */,
 				AD5ECABE235F8CEC0051EE6A /* GoogleService-Info.plist in Resources */,
 				AD5ECAB3235F8CB80051EE6A /* Assets.xcassets in Resources */,
+				AD38941723646ECB00F74FD8 /* README.md in Resources */,
 				AD2521652360835900225C3A /* PlaceTableViewCell.xib in Resources */,
 				AD0146712361ABEC00FBBB00 /* AnniversaryTableViewCell.xib in Resources */,
 				AD5ECAB1235F8CB70051EE6A /* Main.storyboard in Resources */,
@@ -313,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5ECAAE235F8CB70051EE6A /* PlacesViewController.swift in Sources */,
+				AD38941923646F5C00F74FD8 /* Helper.swift in Sources */,
 				AD5ECAC8235F90140051EE6A /* FirebaseManager.swift in Sources */,
 				AD0146762361C90C00FBBB00 /* AddPlaceViewController.swift in Sources */,
 				AD2521642360835900225C3A /* PlaceTableViewCell.swift in Sources */,

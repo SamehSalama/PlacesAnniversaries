@@ -38,7 +38,7 @@ class AddPlaceViewController: PlaceDetailViewController {
     @IBAction override func updatePlaceImageButtonAction(_ sender: UIButton) {
         let imageSourceAlert = UIAlertController(title: "Add place photo", message: "Please select place image source", preferredStyle: .actionSheet)
         imageSourceAlert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (_) in
-            self.openCamera()
+            self.checkCameraAvilability()
         }))
         imageSourceAlert.addAction(UIAlertAction(title: "Photos", style: .default, handler: { (_) in
             self.openPhotos()

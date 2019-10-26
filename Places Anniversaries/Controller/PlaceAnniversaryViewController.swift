@@ -53,11 +53,7 @@ class PlaceAnniversaryViewController: UIViewController {
     // MARK: - Selectors
     @objc private func doneBarButtonItemAction(_ sender: UIBarButtonItem) {
         guard let anniversaryName = anniversaryName, let anniversaryDate = anniversaryDate else {
-            let alert = UIAlertController(title: "Anniversary Details", message: "anniversary name and date are both required", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-            DispatchQueue.main.async {
-                self.present(alert, animated: true)
-            }
+            Helper.alert(title: "Anniversary Details", message: "anniversary name and date are both required", actionTitle: "OK", presenter: self, action: nil)
             return
         }
         guard !anniversaryName.isEmpty else {return}

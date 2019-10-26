@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import AVFoundation
 
 protocol PlaceDetailDelegate {
     func didEditPlace(at:Int)
@@ -86,7 +87,7 @@ class PlaceDetailViewController: UIViewController {
     @IBAction func updatePlaceImageButtonAction(_ sender: UIButton) {
         let imageSourceAlert = UIAlertController(title: "Image Source", message: "Please select place image source", preferredStyle: .actionSheet)
         imageSourceAlert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (_) in
-            self.openCamera()
+            self.checkCameraAvilability()
         }))
         imageSourceAlert.addAction(UIAlertAction(title: "Photos", style: .default, handler: { (_) in
             self.openPhotos()
@@ -147,6 +148,25 @@ class PlaceDetailViewController: UIViewController {
     }
     
     //MARK: - Custom Functions
+    func checkCameraAvilability() {
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            Helper.alert(title: "Camera", message: "Camera is not available!", actionTitle: "OK", presenter: self, action: nil)
+            return
+        }
+        
+        let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        switch authStatus {
+        case .denied, .restricted:
+            Helper.alert(title: "Camera Access!", message: "camera access is restricted, you can change that in device Settings.", actionTitle: "OK", presenter: self, action: nil)
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { (granted) in
+                if granted {self.openCamera()}
+            }
+        default:
+            openCamera()
+        }
+    }
+    
     func openCamera() {
         imagePicker.sourceType = .camera
         imagePicker.cameraDevice = .rear

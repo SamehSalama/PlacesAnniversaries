@@ -17,7 +17,7 @@
 - Supports iOS 10 and above.
 - Supports Dark and Light modes on iOS 13.
 - Supports iPhone portrait orientation.
-- Supports iPad landscape right and left orientations as well as upside down. 
+- Supports all iPad orientations, portrait, upside down and landscape right and left. 
 
 
 ##### Notes
