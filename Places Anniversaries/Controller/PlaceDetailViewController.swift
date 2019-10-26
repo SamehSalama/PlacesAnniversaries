@@ -157,10 +157,16 @@ class PlaceDetailViewController: UIViewController {
         let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
         switch authStatus {
         case .denied, .restricted:
-            Helper.alert(title: "Camera Access!", message: "camera access is restricted, you can change that in device Settings.", actionTitle: "OK", presenter: self, action: nil)
+            Helper.alert(title: "Camera Access!", message: "camera access is restricted, you can change that in device Settings.", actionTitle: "OK", presenter: self) {
+                self.updatePlaceImageButtonAction(UIButton())
+            }
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { (granted) in
-                if granted {self.openCamera()}
+                if granted {
+                    DispatchQueue.main.async {
+                        self.openCamera()
+                    }
+                }
             }
         default:
             openCamera()
